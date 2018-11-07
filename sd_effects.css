@@ -17,6 +17,8 @@
 html {
     background-image: url("sd_back1.png");
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
 }
 
@@ -32,19 +34,34 @@ body {
         radial-gradient(closest-side at 10% 20%, white 20%, rgba(0, 0, 0, 0) 45%),
         radial-gradient(5% 5% at 90% 10%, white 15%, rgba(0, 0, 0, 0) 40%);
 
-    box-shadow: rgb(31, 31, 31) 30px 0px 45px;
-    box-shadow: rgb(31, 31, 31) -30px 0px 45px;
+    /* Step 5 adds box shadows to both sides of the body and main content. */
+    box-shadow: rgb(31, 31, 31) 30px 0px 45px, rgb(31, 31, 31) -30px 0px 45px;
 }
 
 
 /* Navigation List Styles */
-
+/* Addes light blue border to nav */
+body>header li {
+    border: 5px solid rgb(211, 211, 255);
+}
 
 
 
 /* Section Left Styles */
+/* Step 7, affects left h1 and adds shadow to it */
+h1#lefth1 {
+    color: rgb(211, 211, 211);
+    text-shadow: 0px 0px 5px;
+}
 
-
-
+#mportrait {
+    filter: drop-shadow(-15px -15px 5px rgba(51, 51, 51, 0.9)) grayscale(0.7);
+    opacity: 0.6;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
 
 /* Footer Styles */
+footer {
+    border-top: 2px solid rgb(171, 171, 171);
+}
